@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <style>
+        form {
+            max-width: 300px;
+        }
+
+        input {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="" method="post">
+        <fieldset>
+            <legend>Deixe seu recado...</legend>
+
+            <input type="text" id="idNome" name="nmNome" placeholder="Nome Completo" required> <br>
+
+            <input type="email" id="idEmail" name="nmEmail" placeholder="seu@email.com" required> <br>
+
+            <input type="text" id="idEmpresa" name="idEmpresa" placeholder="Empresa/Organização"> <br>
+
+            <input type="number" id="idTel" name="idTel" placeholder="Tel."> <br>
+
+            <select name="motivodocontato" id="motivo" required>
+                <option value="" disabled selected hidden>Motivo do Contato</option>
+                <option>Elogio</option>
+                <option>Problema com produto</option>
+                <option>Reclamação</option>
+                <option>Sugestão</option>
+                <option>Outro</option>
+            </select><br><br>
+
+            <textarea name="mensagem" id="idMsg" cols="30" rows="10" placeholder="Mensagem"></textarea> <br>
+
+            <button type="submit">Enviar</button>
+        </fieldset>
+    </form>
+</body>
+
+</html>
