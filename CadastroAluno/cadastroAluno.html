@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro De Alunos</title>
+    <style>
+        form {
+            margin-left: 20px;
+            max-width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="" method="post">
+        <fieldset>
+            <legend>Cadastro de Aluno</legend>
+
+            <!-- Nome -->
+            <label for="idNome" class="etiqueta">Nome</label> <br>
+            <input type="text" name="nmNome" id="idNome"> <br><br>
+
+            <!-- Sobrenome -->
+            <label for="idSobrenome" class="etiqueta">Sobrenome</label> <br>
+            <input type="text" name="nmSobrenome" id="idSobrenome"> <br><br>
+
+            <!-- Data de Nascimento -->
+            <label for="idData" class="etiqueta">Data de Nascimento</label> <br>
+            <input type="date" name="nmData" id="idData" min="2000-01-01" max="2017/12/31"> <br><br>
+
+            <!-- Endereço -->
+            <label for="idEndereco" class="etiqueta">Endereço</label> <br>
+            <input type="text" name="nmEndereco" id="idEndereco"> <br><br>
+
+            <!-- Nome da Mãe -->
+            <label for="idMae" class="etiqueta">Nome da Mãe</label> <br>
+            <input type="text" name="nmMae" id="idMae"> <br><br>
+
+            <!-- Nome do Pai -->
+            <label for="idPai" class="etiqueta">Nome do Pai</label> <br>
+            <input type="text" name="nmPai" id="idPai"> <br><br>
+
+            <!-- E-mail -->
+            <label for="idEmail" class="etiqueta">E-mail</label> <br>
+            <input type="email" name="nmEmail" id="idEmail"> <br><br>
+
+            <!-- Telefone -->
+            <label for="idTel" class="etiqueta">Tel.</label> <br>
+            <input type="tel" name="nmTel" id="idTel"> <br><br>
+
+            <!-- Série -->
+            <label for="idSerie" class="etiqueta">Série</label> <br>
+            <input type="number" name="nmSerie" id="idSerie" min="1" max="9"> <br><br>
+
+            <!--Opções de Gênero -->
+            <label for="idSexo" class="etiqueta">Sexo</label><br>
+
+            <input type="radio" name="nmGenero" id="idFem" checked>
+            <label for="idFem">Feminino</label><br>
+            <input type="radio" name="nmGenero" id="idMasc">
+            <label for="idFmasc">Masculino</label> <br><br>
+
+            <!-- Opções de Deficiências -->
+            <label for="idNecEspeciais" class="etiqueta">Necessidades Especiais</label><br>
+
+            <input type="checkbox" name="nmAuditiva" id="idAuditiva">
+            <label for="idAuditiva">Deficiência Auditiva</label><br>
+
+            <input type="checkbox" name="nmMotora" id="idMotora">
+            <label for="idMotora">Deficiência Motora</label><br>
+
+            <input type="checkbox" name="nmVisual" id="idVisual">
+            <label for="idVisual">Deficiência Visual</label><br>
+
+            <input type="checkbox" name="nmPC" id="idPC">
+            <label for="idPC">Paralisia Cerebral</label><br>
+
+            <input type="checkbox" name="nmPertAustista" id="idPertAustista">
+            <label for="idPertAustista">Perturbação do Espectro Austista</label><br>
+
+            <input type="checkbox" name="nmPertForo" id="idPertForo">
+            <label for="idPertForo">Perturbação do Foro Psicológico</label><br>
+
+            <input type="checkbox" name="nmPertAprendizagem" id="idPertAprendizagem">
+            <label for="idPertAprendizagem">Perturbação de Aprendizagem</label><br>
+
+            <input type="checkbox" name="nmAltasHab" id="idAltasHab">
+            <label for="idAltasHab">Altas Habilidades</label> <br><br>
+
+            <!-- Botões -->
+            <input type="submit" id="botao" value="Salvar">
+            <input type="reset" id="botao" value="Limpar Tela">
+        </fieldset>
+    </form>
+</body>
+
+</html>
