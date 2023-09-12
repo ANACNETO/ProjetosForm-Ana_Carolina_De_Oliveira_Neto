@@ -1,10 +1,24 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TelaLogin</title>
 </head>
+
 <body>
+    <form action="" method="post">
+        <label for="idusuario" class="etiqueta">Usuário:</label> <br>
+        <input type="text" name="nmusuario" required> <br><br>
+
+        <label for="idSenha" class="etiqueta">Senha:</label> <br>
+        <input type="password" name="nmSenha" id="idSenha" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+            title="Deve conter pelo menos um número e uma letra maiúscula e minúscula e pelo menos 8 ou mais caracteres"
+            required> <br><br>
+        <input type="submit" value="Login">
+    </form> <br>
+
 </body>
+
 </html>
